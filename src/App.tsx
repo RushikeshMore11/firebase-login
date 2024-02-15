@@ -1,6 +1,5 @@
 import React from "react";
 import { signIn, signInWithGoogle, signUp } from "./firebase/auth";
-import Search from "./input/Search";
 
 const App = () => {
   const handleSignIn = async () => {
@@ -31,11 +30,10 @@ const App = () => {
   };
   return (
     <div>
-      {/* <h1>Login</h1>
+      <h1>Login</h1>
       <button onClick={handleSignIn}>Sign In</button>
       <button onClick={handleSignUp}>Sign Up</button>
-      <button onClick={handleSignUpWithGoogle}>Google</button> */}
-      <Search />
+      <button onClick={handleSignUpWithGoogle}>Google</button>
     </div>
   );
 };
